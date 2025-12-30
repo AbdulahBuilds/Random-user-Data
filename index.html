@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Random User Fetch</title>
+</head>
+
+<body class="min-h-screen bg-gray-100 flex items-center justify-center px-4">
+
+  <div class="bg-white w-full max-w-sm rounded-2xl shadow-lg p-6 text-center">
+
+    <!-- Title -->
+    <h1 class="text-2xl font-semibold text-gray-800 mb-4">
+      Random User
+    </h1>
+
+    <!-- User Image -->
+    <img
+      id="UI"
+      src=""
+      alt="User Image"
+      class="mx-auto w-28 h-28 rounded-full border-4 border-gray-200 mb-4 object-cover"
+    />
+
+    <!-- User Info -->
+    <div id="userInfo" class="space-y-1 mb-5">
+      <h2 id="UN" class="text-lg font-semibold text-gray-900">
+        User Name
+      </h2>
+      <p id="UE" class="text-sm text-gray-600">
+        user@email.com
+      </p>
+      <p id="UL" class="text-sm text-gray-500">
+        City, Country
+      </p>
+        <p id="UD" class="text-sm text-gray-500">
+            Additional Details
+    </div>
+
+    <!-- Button -->
+    <button
+      id="fetchBtn"
+      class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-200"
+    >
+      Get Random User
+    </button>
+
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
